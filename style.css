@@ -1,0 +1,13 @@
+/*
+All global color variables declared here:
+*/
+:root {
+    --temp: #111111;
+}
+
+/*
+classes for debug highlighting purposes
+*/
+.debug-1 {    background-color: rgb(180,255,180);   }
+.debug-2 {    background-color: rgb(130,195,130);   }
+.debug-3 {    background-color: rgb(90, 175,90 );   }
