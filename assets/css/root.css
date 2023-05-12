@@ -9,7 +9,20 @@ All global color variables declared here:
     --slightfocus1: #bbb;
     --nofocus: #efefef;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #ddd;
+    
+        --focus: #aaa;
+        --slightfocus2: #444;
+        --slightfocus1: #333;
+        --nofocus: #222;
+    }
+}
+
 body {
     background-color: var(--nofocus);
+    color: var(--text);
     margin: 0%;
 }
