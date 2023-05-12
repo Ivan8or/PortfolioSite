@@ -15,8 +15,8 @@ All global color variables declared here:
         --text: #ddd;
     
         --focus: #aaa;
-        --slightfocus2: #444;
-        --slightfocus1: #333;
+        --slightfocus2: #666;
+        --slightfocus1: #444;
         --nofocus: #222;
     }
 }

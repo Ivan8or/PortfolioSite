@@ -1,4 +1,4 @@
-menu.nav {
+nav.navbar {
     padding: 0px;
     margin: 0px;
     background-color: var(--slightfocus1);
@@ -6,26 +6,27 @@ menu.nav {
     user-select: none;
 }
 @media (orientation: portrait) {
-    menu.nav {
+    nav.navbar {
         font-size: 3vh;
     }
 }
-menu.nav + hr {
+nav.navbar + hr {
     margin: 0px;
 }
-menu.nav > li {
+nav.navbar > li {
     display: inline-flex;
     --menu-link-color: var(--text);
 }
-menu.nav > li:hover {
+nav.navbar > li > a:hover,
+nav.navbar > li > a:focus {
     background-color: var(--slightfocus2);
     --menu-link-color: var(--nofocus);
 }
-menu.nav > li:active {
+nav.navbar > li > a:active {
     background-color: var(--focus);
     --menu-link-color: var(--nofocus);
 }
-menu.nav > li > * {
+nav.navbar > li > a {
     padding: 10px 20px;
     color: var(--menu-link-color);
     text-decoration: none;
