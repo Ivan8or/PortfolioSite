@@ -1,0 +1,19 @@
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#resume-root {
+    background-color: var(--slightfocus1);
+}
+#title {
+    text-align: center;
+}
+#resume-embed {
+    display: block;
+    margin: auto;
+    border: none;
+    width: 504pt;
+    height: 810pt;
+    background-color: var(--slightfocus2);
+}
