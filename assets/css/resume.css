@@ -6,7 +6,7 @@ body {
 #resume-root {
     background-color: var(--slightfocus1);
 }
-#title {
+.title {
     text-align: center;
 }
 #resume-embed {
