@@ -5,11 +5,11 @@ nav.navbar {
     text-align: center;
     user-select: none;
 }
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
     nav.navbar {
         font-size: 3vh;
     }
-}
+} */
 nav.navbar + hr {
     margin: 0px;
 }
