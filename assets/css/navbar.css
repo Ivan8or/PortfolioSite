@@ -1,26 +1,32 @@
-menu.nav {
+nav.navbar {
     padding: 0px;
     margin: 0px;
     background-color: var(--slightfocus1);
     text-align: center;
     user-select: none;
 }
-menu.nav + hr {
+@media (orientation: portrait) {
+    nav.navbar {
+        font-size: 3vh;
+    }
+}
+nav.navbar + hr {
     margin: 0px;
 }
-menu.nav > li {
+nav.navbar > li {
     display: inline-flex;
     --menu-link-color: var(--text);
 }
-menu.nav > li:hover {
+nav.navbar > li > a:hover,
+nav.navbar > li > a:focus {
     background-color: var(--slightfocus2);
     --menu-link-color: var(--nofocus);
 }
-menu.nav > li:active {
+nav.navbar > li > a:active {
     background-color: var(--focus);
     --menu-link-color: var(--nofocus);
 }
-menu.nav > li > * {
+nav.navbar > li > a {
     padding: 10px 20px;
     color: var(--menu-link-color);
     text-decoration: none;

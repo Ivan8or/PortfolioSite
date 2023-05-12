@@ -1,6 +1,5 @@
-
-
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,23 +11,28 @@
 </head>
 
 <body>
-
-    <menu class="nav">
-        <li><a draggable="false" href="/">Projects</a></li>
-        <li><a draggable="false" href="/">Github</a></li>
-        <li><a draggable="false" href="/">LinkedIn</a></li>
-        <li><a draggable="false" href="/resume.html">Resume</a></li>
-        <li><a draggable="false" href="/">Dark Mode</a></li>
-    </menu>
-    <hr>
+    <header>
+        <nav class="navbar">
+            <li><a draggable="false" aria-label="Link to Projects" href="/projects.html">Projects</a></li>
+            <li><a draggable="false" aria-label="Link to Github page" href="https://github.com/Ivan8or">Github</a></li>
+            <li><a draggable="false" aria-label="Link to LinkedIn page" href="https://www.linkedin.com/in/ivan8or">LinkedIn</a></li>
+            <li><a draggable="false" aria-label="Link to Resume" href="/resume.html">Resume</a></li>
+            <li><a draggable="false" aria-label="Toggle Dark Mode" href="/">Dark Mode</a></li>
+        </nav>
+        <hr>
+    </header>
 
     <h1 class="title">
         My Resume
     </h1>
     <h2>
-        <a href="https://docs.google.com/document/d/1ViFYpu_j-oc-M4--h3vju12QZzvZCnRlAbwWWTb1PJI/export?format=pdf">download</a>
+        <a aria-label="Link to download Resume"
+            href="https://docs.google.com/document/d/1ViFYpu_j-oc-M4--h3vju12QZzvZCnRlAbwWWTb1PJI/export?format=pdf">Download Resume</a>
     </h2>
     <div id="resume-root">
-        <iframe id="resume-embed" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vTK9I5b5Etai9jUGsr3nseA0CCrznGvrHX22U-XUYlGH6XUCUqSkoiImOucEdkYenLIoKa6V-FeZcoz/pub?embedded=true"></iframe>
+        <iframe id="resume-embed" scrolling="no" title="Resume"
+            src="https://docs.google.com/document/d/e/2PACX-1vTK9I5b5Etai9jUGsr3nseA0CCrznGvrHX22U-XUYlGH6XUCUqSkoiImOucEdkYenLIoKa6V-FeZcoz/pub?embedded=true"></iframe>
     </div>
 </body>
+
+</html>
