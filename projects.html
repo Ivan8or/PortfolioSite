@@ -1,9 +1,9 @@
-
-
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Ivan's Projects</title>
     <link rel="icon" href="assets/img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="assets/css/root.css">
@@ -12,19 +12,21 @@
 </head>
 
 <body>
-
-    <menu class="nav">
-        <li><a draggable="false" href="/projects.html">Projects</a></li>
-        <li><a draggable="false" href="https://github.com/Ivan8or">Github</a></li>
-        <li><a draggable="false" href="https://www.linkedin.com/in/ivan8or">LinkedIn</a></li>
-        <li><a draggable="false" href="/resume.html">Resume</a></li>
-        <li><a draggable="false" href="/">Dark Mode</a></li>
-    </menu>
-    <hr>
+    <header>
+        <nav class="navbar">
+            <li><a draggable="false" aria-label="Link to Projects" href="/projects.html">Projects</a></li>
+            <li><a draggable="false" aria-label="Link to Github page" href="https://github.com/Ivan8or">Github</a></li>
+            <li><a draggable="false" aria-label="Link to LinkedIn page" href="https://www.linkedin.com/in/ivan8or">LinkedIn</a></li>
+            <li><a draggable="false" aria-label="Link to Resume" href="/resume.html">Resume</a></li>
+            <li><a draggable="false" aria-label="Toggle Dark Mode" href="/">Dark Mode</a></li>
+        </nav>
+        <hr>
+    </header>
 
     <h1 class="title">
         My Projects
     </h1>
+
     <ul class="projects-list">
         <li>
             <h2>Project 1</h2>
@@ -32,10 +34,11 @@
                 lorem ipsum
             </p>
         </li>
+
         <li>
             <h2>Project 2</h2>
             <p>
-                lorem ipsum AAAAHHAAHHAH
+                foo bar banana pudding
             </p>
         </li>
     </ul>
