@@ -1,0 +1,15 @@
+/*
+All global color variables declared here:
+*/
+:root {
+    --text: #222;
+
+    --focus: #444;
+    --slightfocus2: #aaa;
+    --slightfocus1: #bbb;
+    --nofocus: #efefef;
+}
+body {
+    background-color: var(--nofocus);
+    margin: 0%;
+}
