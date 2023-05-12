@@ -2,7 +2,11 @@
 All global color variables declared here:
 */
 :root {
-    --temp: #111111;
+    --text: #222;
+
+    --focus: #aaa;
+    --semifocus: #bbb;
+    --nofocus: #efefef;
 }
 
 /*
@@ -10,4 +14,38 @@ classes for debug highlighting purposes
 */
 .debug-1 {    background-color: rgb(180,255,180);   }
 .debug-2 {    background-color: rgb(130,195,130);   }
-.debug-3 {    background-color: rgb(90, 175,90 );   }
+.debug-3 {    background-color: rgb( 90,175, 90);   }
+
+body {
+    background-color: var(--nofocus);
+    margin: 0px;
+}
+menu.nav {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--semifocus);
+    text-align: center;
+}
+
+menu.nav + hr {
+    margin: 0px;
+}
+
+menu.nav > li {
+    display: inline-block;
+    padding: 10px 20px;
+    --menu-link-color: var(--text);
+}
+menu.nav > li:hover {
+    background-color: var(--focus);
+    --menu-link-color: var(--nofocus);
+}
+menu.nav > li > a {
+    color: var(--menu-link-color);
+    text-decoration: none;
+}
+menu.nav > li > a > img {
+    background-color: white;
+    color: var(--menu-link-color);
+    text-decoration: none;
+}
