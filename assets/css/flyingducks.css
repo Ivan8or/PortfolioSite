@@ -4,48 +4,41 @@
 }
 #duck-animation {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 20vh;
+    height: 20vh;
 }
 .trigger-image {
     position: absolute;
     z-index: 10;
+    transform: translateX(28%);
 }
 .trigger-overlay {
     position: absolute;
     z-index: 100;
+    transform: translateX(28%);
 }
 .mov-x {
     position: absolute;
     bottom: 10%;
     left: -20;
-    width: 40px;
-    height: 40px;
+    width: 25%;
+    height: 25%;
     z-index: 20;
+    visibility: hidden;
 }
 #duck-animation > .trigger-overlay:hover ~ .mov-x {
-    /* animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1); */
-    animation: xAxis 2.5s cubic-bezier(.35, 2, .65, -1) 0s infinite normal;
-    
+    visibility: visible;
+    animation: xAxis 3s cubic-bezier(.35, 2, .65, -1) 0s infinite normal;   
 }
-
 #duck-animation > .trigger-overlay:hover ~ .mov-x > .mov-y {
-    animation: yAxis 1.25s  0s infinite alternate ease-in-out;
+    animation: yAxis 1.5s 0s infinite alternate ease-in-out;
 }
 
 @keyframes yAxis {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100px);
-    }
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateY(-250%); }
 }
 @keyframes xAxis {
-    100% {
-        transform: translateX(200px);
-    }
+    100% { transform: translateX(600%); }
 }
