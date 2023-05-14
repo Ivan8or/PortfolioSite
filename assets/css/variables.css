@@ -3,6 +3,7 @@ All global color variables declared here:
 */
 :root {
     --text: #222;
+    --href-text: #00f;
 
     --focus: #444;
     --slightfocus2: #aaa;
@@ -13,6 +14,7 @@ All global color variables declared here:
 @media (prefers-color-scheme: dark) {
     :root {
         --text: #ddd;
+        --href-text: #88f;
     
         --focus: #aaa;
         --slightfocus2: #666;

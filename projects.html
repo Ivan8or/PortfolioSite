@@ -34,17 +34,88 @@
 
     <ul class="projects-list">
         <li>
-            <h2>Project 1</h2>
+            <h2>Linear Chess (WIP)</h2>
+            <h3>A nonstandard autochess genre game... with real chess!</h3>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ivan8or/LinearChess">
+                Linear Chess Github Page</a>
+            <h4>Introduction:</h4>
             <p>
                 lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+            </p>
+        </li>
+        <li>
+            <h2>RadioScanner</h2>
+            <h3>An encrypted, event-driven key/value messaging system</h3>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ivan8or/RadioScanner">
+                Radio Scanner Github Page</a>
+            <h4>Introduction:</h4>
+            <p>
+                When I was developing my dockerized university minecraft network,
+                I found the need for my server instances to communicate with each
+                other as well as with my bungeecord proxy. While the minecraft Bukkit
+                API does have some support for this type of communication via plugin 
+                messaging, their solution is not free of shortcomings. Most relevant
+                to my situation is that their messaging will not work for a server that
+                has 0 players online - which is unacceptable for my usecase where I
+                will often want to communicate with a server that just launched or 
+                that is about to be shut down. There are some excellent solutions
+                that do what I need (namely Redis / RabbitMQ / most any other message 
+                brokers), but I felt the need to stick to the spirit of DIY and implement
+                my own messaging system. 
+            </p>
+            <h4>Design Considerations:</h4>
+            <p>
+                Most message broker solutions are a middleware, where the user needs to
+                host an application service which then manages communications sent through
+                it. This allows messages to be queued if the recipient is unreachable, 
+                as well as multicast messages efficiently. For my usecase, however, I 
+                consider this extra functionality to be mostly unneeded and even a 
+                detriment. I want a system which would be ready to use without
+                any special setup, tailored to hobby spigot developers who simply want 
+                a reliable way for two servers to communicate. This is especially relevant
+                when considering that most minecraft managed hosting providers will not offer
+                an easy way to deploy extra services (besides possibly an SQL database), 
+                meaning that using a standard message broker would require server owners
+                to break away from the streamlined process of running a managed server.
+            </p>
+            <h4>Functionality:</h4>
+            <p>
+
             </p>
         </li>
 
         <li>
-            <h2>Project 2</h2>
+            <h2>Project</h2>
+            <h3>A very cool project probably</h3>
+            <a target="_blank" rel="noopener noreferrer" href="/projects.html">
+                Project Page</a>
+            <h4>Introduction:</h4>
             <p>
-                foo bar banana <br>
-                pudding cups.
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
+                lorem ipsum
             </p>
         </li>
     </ul>

@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+}
+.projects-list {
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    font-size: 1.25em;
+}
+.projects-list > li a {
+    color: var(--href-text);
+}
