@@ -25,20 +25,28 @@
     height: 25%;
     z-index: 20;
     visibility: hidden;
+    --duck-delay: 0s;
+}
+.delay-1 {
+    --duck-delay: 0.2s;
+    z-index: 19;
+}
+.delay-2 {
+    --duck-delay: 0.4s;
+    z-index: 18;
 }
 #duck-animation > .trigger-overlay:hover ~ .mov-x {
-    visibility: visible;
-    animation: xAxis 3s cubic-bezier(.35, 2, .65, -1) 0s infinite normal;   
+    animation: xAxis 3s cubic-bezier(.35, 2, .65, -1) var(--duck-delay) infinite normal;   
 }
 #duck-animation > .trigger-overlay:hover ~ .mov-x > .mov-y {
-    animation: yAxis 1.5s 0s infinite alternate ease-in-out;
+    animation: yAxis 1.5s var(--duck-delay) infinite alternate ease-in-out;
 }
-
 @keyframes yAxis {
     0% { opacity: 0; }
     20% { opacity: 1; }
     100% { transform: translateY(-250%); }
 }
 @keyframes xAxis {
+    0% { visibility: visible; }
     100% { transform: translateX(600%); }
 }
