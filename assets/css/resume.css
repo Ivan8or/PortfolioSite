@@ -7,6 +7,8 @@ body {
 }
 .title {
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 #resume-embed {
     display: block;
@@ -15,4 +17,8 @@ body {
     width: 504pt;
     height: 780pt;
     background-color: var(--slightfocus2);
+}
+#resume-download {
+    text-align: center;
+    margin: 1vh;
 }
