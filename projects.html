@@ -40,19 +40,40 @@
                 Linear Chess Github Page</a>
             <h4>Introduction:</h4>
             <p>
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
-                lorem ipsum
+                I was tutoring someone struggling with their CS classes over covid, and 
+                one of their assignments was related to building a chess AI. 
+                The assignment itself was straightforward: the AI would use the minimax
+                algorithm to determine its moves, and all the student needed to do was
+                implement several viable evaluation functions and compare them.
+                The following few hours were some of the most interesting of my entire
+                time working with any school assignment: throwing together a function 
+                that calculated simple heuristics resulted in an AI that behaved exactly 
+                as you expected it to. A single edit resulted in vastly different 
+                behavior, with the possibility to make meaningful changes in seconds.
+                This experience has stuck in the back of my mind for years, and I have
+                recently finally gotten around to trying my hand at implementing
+                a multiplayer game inspired by this satisfying responsiveness.
+                <br>
+                P.S. This project is still a work in progress, but I'm taking steps every
+                day to reach my goal of an MVP that me and my friends online can play!
+            </p>
+            <h4>Design Considerations:</h4>
+            <p>
+                The bulk of the backend logic for this game is developed in Java, as 
+                that is both the language I am the most comfortable with for large 
+                projects, as well as being a solid middle ground between being 
+                relatively performant while still allowing for a smooth development
+                experience thanks to it having automatic memory management, 
+                static typing, and support for the OOP paradigm. 
+                <br>
+                For the frontend UI, I chose React.js: I'm not overly concerned with
+                client-side rendering being a performance issue for this kind of app,
+                and React has a lot of community support (which goes a long way for a
+                novice front-end developer like myself).
+                <br>
+                I have not commited to any particular database for this project yet. 
+                but I am leaning towards choosing a relational database like MySQL
+                or Postgres for their high performance with just a single instance. 
             </p>
         </li>
         <li>
@@ -78,21 +99,17 @@
             <h4>Design Considerations:</h4>
             <p>
                 Most message broker solutions are a middleware, where the user needs to
-                host an application service which then manages communications sent through
+                host a broker service which then manages communications sent through
                 it. This allows messages to be queued if the recipient is unreachable, 
                 as well as multicast messages efficiently. For my usecase, however, I 
                 consider this extra functionality to be mostly unneeded and even a 
-                detriment. I want a system which would be ready to use without
-                any special setup, tailored to hobby spigot developers who simply want 
-                a reliable way for two servers to communicate. This is especially relevant
-                when considering that most minecraft managed hosting providers will not offer
+                detriment. I want a system which would be ready to use without any special
+                setup, tailored to hobby spigot developers who simply want a reliable way
+                for two servers to communicate. This is especially relevant when 
+                considering that most minecraft managed hosting providers will not offer
                 an easy way to deploy extra services (besides possibly an SQL database), 
                 meaning that using a standard message broker would require server owners
                 to break away from the streamlined process of running a managed server.
-            </p>
-            <h4>Functionality:</h4>
-            <p>
-
             </p>
         </li>
 
