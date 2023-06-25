@@ -8,7 +8,7 @@ All global color variables declared here:
     --focus: #444;
     --slightfocus2: #aaa;
     --slightfocus1: #bbb;
-    --nofocus: #efefef;
+    --nofocus: #eee;    
 }
 
 @media (prefers-color-scheme: dark) {
