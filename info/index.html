@@ -35,34 +35,44 @@
     <ul id="contact-list">
         <li>
             <span class="contact-type">Email: </span>
-            <span class="contact-address">ivan.andr.volkov@gmail.com</span>
+            <span class="contact-address">
+                ivan.andr.volkov@gmail.com
+                <strong>|</strong>
+                <a onclick="navigator.clipboard.writeText('ivan.andr.volkov@gmail.com')" href="">copy</a>
+            </span>
         </li>
         <li>
             <span class="contact-type">Phone Number: </span>
-            <span class="contact-address">(240)&nbsp;408&#8209;9401</span>
+            <span class="contact-address">
+                240&#8209;408&#8209;9401
+                <strong>|</strong>
+                <a onclick="navigator.clipboard.writeText('2404089401')" href="">copy</a>
+            </span>
         </li>
         <li>
             <span class="contact-type">Discord: </span>
-            <span class="contact-address">ivan8or</span>
+            <span class="contact-address">
+                ivan8or
+                <strong>|</strong>
+                <a onclick="navigator.clipboard.writeText('ivan8or')" href="">copy</a>
+            </span>
         </li>
         <li>
             <span class="contact-type">GPG Key: </span>
             <span class="contact-address">
-
-                <a href="/gpg">view key</a>
+                <a href="/gpg">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/gpg').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy key</a>
+                <a onclick="fetch('/gpg').then(e => navigator.clipboard.writeText(e.text()))" href="">copy</a>
                 <strong>|</strong>
-                <a download href="/gpg">download key</a>
+                <a download href="/assets/bin/ivan.gpg">download</a>
             </span>
         </li>
         <li>
             <span class="contact-type">XMR Address: </span>
             <span class="contact-address">
-
-                <a href="/xmr">view address</a>
+                <a href="/xmr">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy address</a>
+                <a onclick="fetch('/assets/text/xmr.txt').then(e => navigator.clipboard.writeText(e.text()))" href="">copy</a>
             </span>
         </li>
     </ul>
