@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Ivan Volkov's portfolio website">
-    <title>Contact Ivan</title>
+    <title>Ivan's Info</title>
     <link rel="icon" href="/assets/img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="/css/variables.css">
     <link rel="stylesheet" type="text/css" href="/css/navbar.css">
@@ -25,13 +25,13 @@
                 LinkedIn</a></li>
             <li><a draggable="false" aria-label="Link to Resume" href="/resume">
                 Resume</a></li>
-            <li><a draggable="false" aria-label="Link to Contact Me Page" href="/contactme">
-                Contact Me</a></li>
+            <li><a draggable="false" aria-label="Link to Contact Me Page" href="/info">
+                Info</a></li>
         </nav>
         <hr>
     </header>
 
-    <h1 class="title">Contact Me</h1>
+    <h1 class="title">Personal Info</h1>
     <ul id="contact-list">
         <li>
             <span class="contact-type">Email: </span>
@@ -48,9 +48,21 @@
         <li>
             <span class="contact-type">GPG Key: </span>
             <span class="contact-address">
+
                 <a href="/assets/text/gpg.txt">view key</a>
                 <strong>|</strong>
+                <a onclick="fetch('/assets/text/gpg.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy key</a>
+                <strong>|</strong>
                 <a download href="/assets/text/gpg.txt">download key</a>
+            </span>
+        </li>
+        <li>
+            <span class="contact-type">XMR Address: </span>
+            <span class="contact-address">
+
+                <a href="/assets/text/signed-xmr.txt">view address</a>
+                <strong>|</strong>
+                <a onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy address</a>
             </span>
         </li>
     </ul>
