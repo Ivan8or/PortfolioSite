@@ -9,6 +9,8 @@ All global color variables declared here:
     --slightfocus2: #aaa;
     --slightfocus1: #bbb;
     --nofocus: #eee;    
+
+    font-size: 1.2em;
 }
 
 @media (prefers-color-scheme: dark) {
