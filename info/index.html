@@ -49,18 +49,18 @@
             <span class="contact-type">GPG Key: </span>
             <span class="contact-address">
 
-                <a href="/assets/text/gpg.txt">view key</a>
+                <a href="/gpg">view key</a>
                 <strong>|</strong>
-                <a onclick="fetch('/assets/text/gpg.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy key</a>
+                <a onclick="fetch('/gpg').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy key</a>
                 <strong>|</strong>
-                <a download href="/assets/text/gpg.txt">download key</a>
+                <a download href="/gpg">download key</a>
             </span>
         </li>
         <li>
             <span class="contact-type">XMR Address: </span>
             <span class="contact-address">
 
-                <a href="/assets/text/signed-xmr.txt">view address</a>
+                <a href="/xmr">view address</a>
                 <strong>|</strong>
                 <a onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy address</a>
             </span>
