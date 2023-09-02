@@ -9,7 +9,7 @@
     <link rel="icon" href="/assets/img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="/css/variables.css">
     <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="/css/contactme.css">
+    <link rel="stylesheet" type="text/css" href="/css/info.css">
 </head>
 
 <body>
@@ -36,43 +36,43 @@
         <li>
             <span class="contact-type">Email: </span>
             <span class="contact-address">
-                ivan.andr.volkov@gmail.com
+                <span class="selectable">ivan.andr.volkov@gmail.com</span>
                 <strong>|</strong>
-                <a onclick="navigator.clipboard.writeText('ivan.andr.volkov@gmail.com')" href="">copy</a>
+                <span class="clickable" onclick="navigator.clipboard.writeText('ivan.andr.volkov@gmail.com')">copy</span>
             </span>
         </li>
         <li>
             <span class="contact-type">Phone Number: </span>
             <span class="contact-address">
-                240&#8209;408&#8209;9401
+                <span class="selectable">240&#8209;408&#8209;9401</span>
                 <strong>|</strong>
-                <a onclick="navigator.clipboard.writeText('2404089401')" href="">copy</a>
+                <span class="clickable" onclick="navigator.clipboard.writeText('2404089401')">copy</span>
             </span>
         </li>
         <li>
             <span class="contact-type">Discord: </span>
             <span class="contact-address">
-                ivan8or
+                <span class="selectable">ivan8or</span>
                 <strong>|</strong>
-                <a onclick="navigator.clipboard.writeText('ivan8or')" href="">copy</a>
+                <span class="clickable" onclick="navigator.clipboard.writeText('ivan8or')" >copy</span>
             </span>
         </li>
         <li>
             <span class="contact-type">GPG Key: </span>
             <span class="contact-address">
-                <a href="/gpg">view</a>
+                <a class="clickable" href="/gpg">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/assets/text/gpg.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy</a>
+                <span class="clickable" onclick="fetch('/assets/text/gpg.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))">copy</span>
                 <strong>|</strong>
-                <a download href="/assets/bin/ivan.gpg">download</a>
+                <a class="clickable" download href="/assets/bin/ivan.gpg">download</a>
             </span>
         </li>
         <li>
             <span class="contact-type">XMR Address: </span>
             <span class="contact-address">
-                <a href="/xmr">view</a>
+                <a class="clickable" href="/xmr">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy</a>
+                <span class="clickable" onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))">copy</span>
             </span>
         </li>
     </ul>
