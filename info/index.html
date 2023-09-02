@@ -62,7 +62,7 @@
             <span class="contact-address">
                 <a href="/gpg">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/gpg').then(e => navigator.clipboard.writeText(e.text()))" href="">copy</a>
+                <a onclick="fetch('/gpg').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy</a>
                 <strong>|</strong>
                 <a download href="/assets/bin/ivan.gpg">download</a>
             </span>
@@ -72,7 +72,7 @@
             <span class="contact-address">
                 <a href="/xmr">view</a>
                 <strong>|</strong>
-                <a onclick="fetch('/assets/text/xmr.txt').then(e => navigator.clipboard.writeText(e.text()))" href="">copy</a>
+                <a onclick="fetch('/assets/text/xmr.txt').then(e => e.text()).then(e => navigator.clipboard.writeText(e))" href="">copy</a>
             </span>
         </li>
     </ul>
