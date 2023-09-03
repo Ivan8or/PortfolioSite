@@ -27,7 +27,7 @@ nav.navbar > li > a:focus {
     --menu-link-color: var(--nofocus);
 }
 nav.navbar > li > a:active {
-    background-color: var(--focus);
+    background-color: var(--slightfocus3);
     --menu-link-color: var(--nofocus);
 }
 nav.navbar > li > a {

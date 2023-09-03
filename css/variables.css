@@ -8,6 +8,7 @@ All global color variables declared here:
     --focus: #444;
     --slightfocus1: #aaa;
     --slightfocus2: #bbb;
+    --slightfocus3: #ccc;
     --nofocus: #eee;    
 
     font-family: 'Inter';
@@ -22,6 +23,7 @@ All global color variables declared here:
         --focus: #aaa;
         --slightfocus1: #666;
         --slightfocus2: #444;
+        --slightfocus3: #393939;
         --nofocus: #222;
     }
 }
