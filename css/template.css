@@ -2,7 +2,10 @@ body {
     background-color: var(--nofocus);
     color: var(--text);
     margin: 0%;
-    min-height: 100%;
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 nav.navbar {
     padding: 0px;
@@ -31,4 +34,16 @@ nav.navbar > li > a {
     padding: 10px 20px;
     color: var(--menu-link-color);
     text-decoration: none;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 0.4rem;
+    background-color: var(--slightfocus2);
 }
