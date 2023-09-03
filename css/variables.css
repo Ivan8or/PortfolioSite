@@ -6,10 +6,11 @@ All global color variables declared here:
     --href-text: #00f;
 
     --focus: #444;
-    --slightfocus2: #aaa;
-    --slightfocus1: #bbb;
+    --slightfocus1: #aaa;
+    --slightfocus2: #bbb;
     --nofocus: #eee;    
 
+    font-family: 'Inter';
     font-size: 1.2em;
 }
 
@@ -19,8 +20,8 @@ All global color variables declared here:
         --href-text: #88f;
     
         --focus: #aaa;
-        --slightfocus2: #666;
-        --slightfocus1: #444;
+        --slightfocus1: #666;
+        --slightfocus2: #444;
         --nofocus: #222;
     }
 }
