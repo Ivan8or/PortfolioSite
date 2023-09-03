@@ -36,6 +36,11 @@ nav.navbar > li > a {
     text-decoration: none;
 }
 
+
+h1 {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     margin-top: auto;
