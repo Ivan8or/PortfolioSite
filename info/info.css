@@ -7,6 +7,7 @@
 }
 .selectable {
     user-select: text;
+    color: var(--focus);
 }
 .clickable, .clickable:any-link {
     color: var(--href-text);
