@@ -35,10 +35,10 @@
     margin-right: 5%;
     margin-bottom: 2rem;
     display: inline-block;
-    text-align: center;
 }
-.nonmedia * {
-    text-align: center;
+.nonmedia > * {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .media {
     margin-left: 5%;
