@@ -43,7 +43,12 @@
 .media {
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
     width: 90%;
     border-radius: 1rem;
+}
+.subtitle {
+    text-align: center;
+    font-size: 0.6em;
+    color: var(--slightfocus1);
+    margin-bottom: 1.5rem;
 }
