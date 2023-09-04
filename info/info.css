@@ -11,13 +11,3 @@
     user-select: text;
     color: var(--text);
 }
-.clickable, .clickable:any-link {
-    color: var(--href-text);
-    text-decoration: underline;
-}
-.clickable:hover {
-    cursor: pointer;
-}
-.clickable:active {
-    color: purple;
-}

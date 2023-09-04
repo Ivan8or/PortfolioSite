@@ -35,16 +35,24 @@ nav.navbar > li > a {
     color: var(--menu-link-color);
     text-decoration: none;
 }
-
-
 h1 {
     text-align: center;
 }
-
 footer {
     text-align: center;
     margin-top: auto;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
     background-color: var(--slightfocus2);
+}
+
+.clickable {
+    color: var(--href-text);
+    text-decoration: underline;
+}
+.clickable:hover {
+    cursor: pointer;
+}
+.clickable:active {
+    color: purple;
 }
