@@ -4,10 +4,12 @@
     padding-right: 3vw;
     font-size: 1.25em;
     user-select: none;
+    
+    color: var(--focus);
 }
 .selectable {
     user-select: text;
-    color: var(--focus);
+    color: var(--text);
 }
 .clickable, .clickable:any-link {
     color: var(--href-text);

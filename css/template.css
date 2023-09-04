@@ -10,7 +10,7 @@ body {
 nav.navbar {
     padding: 0px;
     margin: 0px;
-    background-color: var(--slightfocus1);
+    background-color: var(--slightfocus3);
     text-align: center;
     user-select: none;
 }
@@ -27,7 +27,7 @@ nav.navbar > li > a:focus {
     --menu-link-color: var(--nofocus);
 }
 nav.navbar > li > a:active {
-    background-color: var(--slightfocus3);
+    background-color: var(--slightfocus1);
     --menu-link-color: var(--nofocus);
 }
 nav.navbar > li > a {
