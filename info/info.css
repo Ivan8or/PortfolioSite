@@ -1,4 +1,4 @@
-#contact-list {
+.contact-list {
     margin: 0;
     padding-left: 8vw;
     padding-right: 3vw;
@@ -7,7 +7,55 @@
     
     color: var(--focus);
 }
+.contact-type {
+    min-width: 8em;
+    display: inline-block;
+}
+.contact-address {
+    min-width: 14em;
+    display: inline-block;
+}
 .selectable {
     user-select: text;
     color: var(--text);
+}
+
+.dropdown-text {
+    color: var(--slightfocus1);
+    font-size: 0.8em;
+    margin-left: 8dvw;
+    user-select: none;
+}
+.info-dropdown input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.info-dropdown input ~ .checkmark:after {
+    content: "";
+    color: var(--slightfocus1);
+    font-size: 0.5em;
+}
+.info-dropdown input:checked ~ .checkmark:after {
+    content: "";
+    color: var(--slightfocus1);
+    font-size: 0.5em;
+}
+.hidden-menu {
+    position: relative;
+    overflow: hidden;
+}
+.hidey-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-color: var(--nofocus);
+    pointer-events: none ;
+}
+
+.info-dropdown input:checked ~ .hidey-box {
+    z-index: -1;
 }
