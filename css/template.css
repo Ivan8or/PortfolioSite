@@ -13,6 +13,7 @@ nav.navbar {
     background-color: var(--slightfocus3);
     text-align: center;
     user-select: none;
+    font-size: 0.9rem;
 }
 nav.navbar + hr {
     margin: 0px;
@@ -31,7 +32,7 @@ nav.navbar > li > a:active {
     --menu-link-color: var(--nofocus);
 }
 nav.navbar > li > a {
-    padding: 10px 20px;
+    padding: 8px 20px;
     color: var(--menu-link-color);
     text-decoration: none;
 }
@@ -41,8 +42,9 @@ h1 {
 footer {
     text-align: center;
     margin-top: auto;
-    padding-bottom: 0.3rem;
-    padding-top: 0.3rem;
+    font-size: 0.9em;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
     background-color: var(--slightfocus2);
 }
 
