@@ -11,7 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    max-width: min(70%,30rem);
+    max-width: min(80%,30rem);
     padding: 1rem 1rem 0.4rem 0.4rem;
     margin-bottom: 3rem;
     border-radius: 2rem;
@@ -47,10 +47,8 @@
 }
 
 #think-image {
-    margin-left: 1rem;
     margin-bottom: 0.5rem;
-    /* padding-left: min(30dvw,15rem); */
-    padding-left: min(5dvw, 3rem);
+    margin-left: min(10dvw, 4rem);
     display: inline-block;
     width: max(20%,7rem);
 }
