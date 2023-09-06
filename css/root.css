@@ -1,8 +1,34 @@
-#about-me h2, #about-me h3 {
-    margin-left: 5vw;
+
+.suggestion {
+    text-align: center;
+    color: var(--focus);
+}
+
+
+
+
+
+#opinion-corner {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: min(70%,30rem);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--slightfocus3);
+}
+
+#opinion-corner h2 {
+    margin-top: 0;
 }
 
 #think-image {
-    width: 100%;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: min(30dvw,15rem);
+    display: block;
+    width: max(20%,7rem);
+
 }
+
